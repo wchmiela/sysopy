@@ -1,0 +1,103 @@
+Biblioteka statyczna:
+---Argumenty---
+Operacje: create add delete find 
+Rozmiar tablicy: 999. Rozmiar bloków: 999
+Indeksy blokow do dodania: 5 3 
+Indeksy blokow do usuniecia: 5 
+Szukanie bloku o podobnej sumie jak: 300
+Alokacja: statyczna
+---Mierzenie czasów---
+Statyczna alokacja
+real:	 0.011053 [s]		 delta_start: 0.010818 [s]		 delta_last 0.010818 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000001 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Wyszukiwanie - statyczna alokacja
+real:	 0.013641 [s]		 delta_start: 0.013406 [s]		 delta_last 0.002588 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Dodawanie - statyczna alokacja
+real:	 0.013665 [s]		 delta_start: 0.013430 [s]		 delta_last 0.000024 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - statyczna alokacja
+real:	 0.013671 [s]		 delta_start: 0.013436 [s]		 delta_last 0.000006 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie i dodanie w to samo miejsce - statyczna alokacja
+real:	 0.013686 [s]		 delta_start: 0.013451 [s]		 delta_last 0.000015 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie blokow, nastepnie dodanie blokow - statyczna alokacja
+real:	 0.013701 [s]		 delta_start: 0.013466 [s]		 delta_last 0.000015 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Biblioteka dzielona:
+---Argumenty---
+Operacje: create add delete find 
+Rozmiar tablicy: 999. Rozmiar bloków: 999
+Indeksy blokow do dodania: 5 3 
+Indeksy blokow do usuniecia: 5 
+Szukanie bloku o podobnej sumie jak: 300
+Alokacja: statyczna
+---Mierzenie czasów---
+Statyczna alokacja
+real:	 0.012867 [s]		 delta_start: 0.012452 [s]		 delta_last 0.012452 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Wyszukiwanie - statyczna alokacja
+real:	 0.015652 [s]		 delta_start: 0.015237 [s]		 delta_last 0.002785 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000001 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Dodawanie - statyczna alokacja
+real:	 0.015680 [s]		 delta_start: 0.015265 [s]		 delta_last 0.000028 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - statyczna alokacja
+real:	 0.015686 [s]		 delta_start: 0.015271 [s]		 delta_last 0.000006 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie i dodanie w to samo miejsce - statyczna alokacja
+real:	 0.015703 [s]		 delta_start: 0.015288 [s]		 delta_last 0.000017 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie blokow, nastepnie dodanie blokow - statyczna alokacja
+real:	 0.015720 [s]		 delta_start: 0.015305 [s]		 delta_last 0.000017 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Biblioteka ladowana dynamicznie:
+---Argumenty---
+Operacje: create add delete find 
+Rozmiar tablicy: 999. Rozmiar bloków: 999
+Indeksy blokow do dodania: 5 3 
+Indeksy blokow do usuniecia: 5 
+Szukanie bloku o podobnej sumie jak: 300
+Alokacja: statyczna
+---Mierzenie czasów---
+Statyczna alokacja
+real:	 0.012665 [s]		 delta_start: 0.012045 [s]		 delta_last 0.012045 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000001 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Wyszukiwanie - statyczna alokacja
+real:	 0.015313 [s]		 delta_start: 0.014693 [s]		 delta_last 0.002648 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Dodawanie - statyczna alokacja
+real:	 0.015341 [s]		 delta_start: 0.014721 [s]		 delta_last 0.000028 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - statyczna alokacja
+real:	 0.015348 [s]		 delta_start: 0.014728 [s]		 delta_last 0.000007 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie i dodanie w to samo miejsce - statyczna alokacja
+real:	 0.015364 [s]		 delta_start: 0.014744 [s]		 delta_last 0.000016 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+Usuwanie - wariant - usuniecie blokow, nastepnie dodanie blokow - statyczna alokacja
+real:	 0.015379 [s]		 delta_start: 0.014759 [s]		 delta_last 0.000015 [s]
+user:	 0.000001 [s]		 delta_start: 0.000001 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+
+Komentarz:  Programy wykorzystujące dynamiczną alokację są wolniejsze od wykorzystujących statyczną alokację.
+            Programy z biblioteki statyczne są szybsze od dzielonych.
+            Różnica między bibliotekami ładowanymi przy starcie programu, a bibliotekami ładowanymi w trakcie działania programu są niewidoczne.
