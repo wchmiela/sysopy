@@ -22,7 +22,7 @@ staticlib: $(OBJECT_FILES)
 		ar rcs libstatic.a $(OBJECT_FILES)
 
 static: staticlib
-		@$(CC) $(LINKERFLAGS) app.c  -o static $(CFLAGS) -static -L. -lstatic
+		@$(CC) $(LINKERFLAGS) app.o libstatic.a -L ./ -o static
 
 shared: sharedlib
 		@$(CC) $(LINKERFLAGS) app.c -o shared $(CFLAGS) -L. -lshared
