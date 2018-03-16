@@ -25,7 +25,7 @@ staticlib: $(OBJECT_FILES)
 		ar rcs libstatic.a $(OBJECT_FILES)
 
 static_o1: staticlib
-		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_1) app.c -o static_o1 -static -L. -lstatic
+		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_1) app.o libstatic.a -L ./ -o static_o1
 
 shared_o1: sharedlib
 		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_1) app.c -o shared_o1 -L. -lshared
@@ -43,7 +43,7 @@ run_dll_o1: dll_o1
 		./dll_o1 $(ARGS)
 
 static_o2: staticlib
-		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_2) app.c -o static_o2 -static -L. -lstatic
+		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_2) app.o libstatic.a -L ./ -o static_o2
 
 shared_o2: sharedlib
 		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_2) app.c -o shared_o2 -L. -lshared
@@ -61,7 +61,7 @@ run_dll_o2: dll_o2
 		./dll_o2 $(ARGS)
 
 static_o3: staticlib
-		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_3) app.c -o static_o3 -static -L. -lstatic
+		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_3) app.o libstatic.a -L ./ -o static_o3
 
 shared_o3: sharedlib
 		@$(CC) $(LINKERFLAGS) $(CFLAGS) $(OPT_3) app.c -o shared_o3 -L. -lshared
