@@ -1,0 +1,174 @@
+>>>Generowanie pliku. Rozmiar rekordu:4. Ilosc rekordow:200000
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:4. Ilosc rekordow:200000
+---Mierzenie czasów---
+real:	 0.002640 [s]		 delta_start: 0.001995 [s]		 delta_last 0.001995 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:4. Ilosc rekordow:200000
+---Mierzenie czasów---
+real:	 0.002474 [s]		 delta_start: 0.001935 [s]		 delta_last 0.001935 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:4. Ilosc rekordow:200000
+---Mierzenie czasów---
+real:	 0.002616 [s]		 delta_start: 0.002126 [s]		 delta_last 0.002126 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:4. Ilosc rekordow:200000
+---Mierzenie czasów---
+real:	 0.002732 [s]		 delta_start: 0.002246 [s]		 delta_last 0.002246 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:512. Ilosc rekordow:500
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:512. Ilosc rekordow:500
+---Mierzenie czasów---
+real:	 0.704751 [s]		 delta_start: 0.704130 [s]		 delta_last 0.704130 [s]
+user:	 0.000004 [s]		 delta_start: 0.000004 [s]		 delta_last 0.000004 [s]
+system:	 0.000066 [s]		 delta_start: 0.000066 [s]		 delta_last 0.000066 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:512. Ilosc rekordow:500
+---Mierzenie czasów---
+real:	 0.768284 [s]		 delta_start: 0.767784 [s]		 delta_last 0.767784 [s]
+user:	 0.000004 [s]		 delta_start: 0.000004 [s]		 delta_last 0.000004 [s]
+system:	 0.000072 [s]		 delta_start: 0.000072 [s]		 delta_last 0.000072 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:512. Ilosc rekordow:500
+---Mierzenie czasów---
+real:	 0.006484 [s]		 delta_start: 0.005882 [s]		 delta_last 0.005882 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:512. Ilosc rekordow:500
+---Mierzenie czasów---
+real:	 0.001501 [s]		 delta_start: 0.000964 [s]		 delta_last 0.000964 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:4096. Ilosc rekordow:40
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:4096. Ilosc rekordow:40
+---Mierzenie czasów---
+real:	 45.141116 [s]		 delta_start: 45.140617 [s]		 delta_last 45.140617 [s]
+user:	 0.000242 [s]		 delta_start: 0.000242 [s]		 delta_last 0.000242 [s]
+system:	 0.004271 [s]		 delta_start: 0.004271 [s]		 delta_last 0.004271 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:4096. Ilosc rekordow:40
+---Mierzenie czasów---
+real:	 51.571885 [s]		 delta_start: 51.570964 [s]		 delta_last 51.570964 [s]
+user:	 0.000414 [s]		 delta_start: 0.000414 [s]		 delta_last 0.000414 [s]
+system:	 0.004743 [s]		 delta_start: 0.004743 [s]		 delta_last 0.004743 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:4096. Ilosc rekordow:40
+---Mierzenie czasów---
+real:	 0.046135 [s]		 delta_start: 0.045504 [s]		 delta_last 0.045504 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000004 [s]		 delta_start: 0.000004 [s]		 delta_last 0.000004 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:4096. Ilosc rekordow:40
+---Mierzenie czasów---
+real:	 0.001715 [s]		 delta_start: 0.001093 [s]		 delta_last 0.001093 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:8192. Ilosc rekordow:15
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:8192. Ilosc rekordow:15
+---Mierzenie czasów---
+real:	 185.347545 [s]		 delta_start: 185.346808 [s]		 delta_last 185.346808 [s]
+user:	 0.001022 [s]		 delta_start: 0.001022 [s]		 delta_last 0.001022 [s]
+system:	 0.017512 [s]		 delta_start: 0.017512 [s]		 delta_last 0.017512 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:8192. Ilosc rekordow:15
+---Mierzenie czasów---
+real:	 202.489042 [s]		 delta_start: 202.488267 [s]		 delta_last 202.488267 [s]
+user:	 0.001690 [s]		 delta_start: 0.001690 [s]		 delta_last 0.001690 [s]
+system:	 0.018558 [s]		 delta_start: 0.018558 [s]		 delta_last 0.018558 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:8192. Ilosc rekordow:15
+---Mierzenie czasów---
+real:	 0.086885 [s]		 delta_start: 0.086289 [s]		 delta_last 0.086289 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000008 [s]		 delta_start: 0.000008 [s]		 delta_last 0.000008 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:8192. Ilosc rekordow:15
+---Mierzenie czasów---
+real:	 0.001337 [s]		 delta_start: 0.000747 [s]		 delta_last 0.000747 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:4. Ilosc rekordow:300000
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:4. Ilosc rekordow:300000
+---Mierzenie czasów---
+real:	 0.005774 [s]		 delta_start: 0.005145 [s]		 delta_last 0.005145 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:4. Ilosc rekordow:300000
+---Mierzenie czasów---
+real:	 0.005678 [s]		 delta_start: 0.004937 [s]		 delta_last 0.004937 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:4. Ilosc rekordow:300000
+---Mierzenie czasów---
+real:	 0.004677 [s]		 delta_start: 0.004038 [s]		 delta_last 0.004038 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:4. Ilosc rekordow:300000
+---Mierzenie czasów---
+real:	 0.004480 [s]		 delta_start: 0.003885 [s]		 delta_last 0.003885 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:512. Ilosc rekordow:650
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:512. Ilosc rekordow:650
+---Mierzenie czasów---
+real:	 0.812773 [s]		 delta_start: 0.812123 [s]		 delta_last 0.812123 [s]
+user:	 0.000006 [s]		 delta_start: 0.000006 [s]		 delta_last 0.000006 [s]
+system:	 0.000075 [s]		 delta_start: 0.000075 [s]		 delta_last 0.000075 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:512. Ilosc rekordow:650
+---Mierzenie czasów---
+real:	 0.876373 [s]		 delta_start: 0.875691 [s]		 delta_last 0.875691 [s]
+user:	 0.000007 [s]		 delta_start: 0.000007 [s]		 delta_last 0.000007 [s]
+system:	 0.000080 [s]		 delta_start: 0.000080 [s]		 delta_last 0.000080 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:512. Ilosc rekordow:650
+---Mierzenie czasów---
+real:	 0.007517 [s]		 delta_start: 0.006808 [s]		 delta_last 0.006808 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:512. Ilosc rekordow:650
+---Mierzenie czasów---
+real:	 0.002021 [s]		 delta_start: 0.001385 [s]		 delta_last 0.001385 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:4096. Ilosc rekordow:45
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:4096. Ilosc rekordow:45
+---Mierzenie czasów---
+real:	 46.605864 [s]		 delta_start: 46.605270 [s]		 delta_last 46.605270 [s]
+user:	 0.000247 [s]		 delta_start: 0.000247 [s]		 delta_last 0.000247 [s]
+system:	 0.004413 [s]		 delta_start: 0.004413 [s]		 delta_last 0.004413 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:4096. Ilosc rekordow:45
+---Mierzenie czasów---
+real:	 50.517432 [s]		 delta_start: 50.516707 [s]		 delta_last 50.516707 [s]
+user:	 0.000408 [s]		 delta_start: 0.000408 [s]		 delta_last 0.000408 [s]
+system:	 0.004643 [s]		 delta_start: 0.004643 [s]		 delta_last 0.004643 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:4096. Ilosc rekordow:45
+---Mierzenie czasów---
+real:	 0.041755 [s]		 delta_start: 0.041219 [s]		 delta_last 0.041219 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000004 [s]		 delta_start: 0.000004 [s]		 delta_last 0.000004 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:4096. Ilosc rekordow:45
+---Mierzenie czasów---
+real:	 0.001408 [s]		 delta_start: 0.000830 [s]		 delta_last 0.000830 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+>>>Generowanie pliku. Rozmiar rekordu:8192. Ilosc rekordow:18
+>>>Sortowanie - funkcje systemowe. Rozmiar rekordu:8192. Ilosc rekordow:18
+---Mierzenie czasów---
+real:	 182.158823 [s]		 delta_start: 182.158242 [s]		 delta_last 182.158242 [s]
+user:	 0.000992 [s]		 delta_start: 0.000992 [s]		 delta_last 0.000992 [s]
+system:	 0.017223 [s]		 delta_start: 0.017223 [s]		 delta_last 0.017223 [s]
+>>>Sortowanie - funkcje biblioteczne. Rozmiar rekordu:8192. Ilosc rekordow:18
+---Mierzenie czasów---
+real:	 199.400456 [s]		 delta_start: 199.399863 [s]		 delta_last 199.399863 [s]
+user:	 0.001672 [s]		 delta_start: 0.001672 [s]		 delta_last 0.001672 [s]
+system:	 0.018267 [s]		 delta_start: 0.018267 [s]		 delta_last 0.018267 [s]
+>>>Kopiowanie - funkcje systemowe. Rozmiar rekordu:8192. Ilosc rekordow:18
+---Mierzenie czasów---
+real:	 0.097265 [s]		 delta_start: 0.096677 [s]		 delta_last 0.096677 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000009 [s]		 delta_start: 0.000009 [s]		 delta_last 0.000009 [s]
+>>>Kopiowanie - funkcje biblioteczne. Rozmiar rekordu:8192. Ilosc rekordow:18
+---Mierzenie czasów---
+real:	 0.001876 [s]		 delta_start: 0.000930 [s]		 delta_last 0.000930 [s]
+user:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+system:	 0.000000 [s]		 delta_start: 0.000000 [s]		 delta_last 0.000000 [s]
+
+
+Komentarz:
+ - Sortowanie funkcjami systemowymi jest znacznie szybsze niz sortowanie funkcjami bibliotecznymi.
+ - Kopiowanie funkcjami systemowymi jest szybsze niz Kopiowanie funkcjami bibliotecznymi.
+ - Dlugosc rekordu ma niewielki wplyw na czas sortowanie. Liczy sie ilosc rekordow. 
