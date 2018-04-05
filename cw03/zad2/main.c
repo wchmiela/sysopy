@@ -49,7 +49,6 @@ void execute(char *program_name, char *args)
         int result = execvp(buf[0], buf);
         if( result == -1 )
         {
-            printf("%s - %s\n", program_name, MSG_RUN_ERROR);
             exit(EXIT_FAILURE);
         }
     } else
@@ -92,6 +91,7 @@ int main(int argc, char *argv[])
         } else if( next_option == 'h' )
         {
             print_help();
+            exit(EXIT_SUCCESS);
         }
     } while( next_option != -1 );
 
@@ -102,11 +102,10 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    char *buffer = malloc(256 * sizeof(char));
+    char buffer[255];
 
-    while( fgets(buffer, 256, file))
+    while( fgets(buffer, 255, file))
     {
-
         char *program_name = calloc(sizeof(char), 256);
         char *args = calloc(sizeof(char), 256);
 
@@ -123,7 +122,6 @@ int main(int argc, char *argv[])
         execute(program_name, args);
     }
 
-    free(buffer);
     fclose(file);
 
     exit(EXIT_SUCCESS);
