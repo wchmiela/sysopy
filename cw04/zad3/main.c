@@ -4,9 +4,9 @@ int l = -1;
 
 int type = -1;
 
-int signals_sent = 0;
+sig_atomic_t signals_sent = 0;
 
-int signals_received = 0;
+sig_atomic_t signals_received = 0;
 
 pid_t child_pid;
 
@@ -49,6 +49,8 @@ void _set()
 
 int main(int argc, char *argv[])
 {
+    signal(SIGINT, handler_SIG_INT);
+
     int next_option = -1;
 
     const char *short_opt = "l:";
@@ -98,8 +100,9 @@ int main(int argc, char *argv[])
     }
 
     sleep(1);
+    int i;
+    for (i = 0; i < l; ++i) {
 
-    for (int i = 0; i < l; ++i) {
         switch (type) {
             case 1:printf("Wyslano sygnal USR1 do potomka nr: %d\n", ++signals_sent);
                 fflush(stdout);
@@ -120,10 +123,11 @@ int main(int argc, char *argv[])
 
                 kill(child_pid, SIGRTMIN);
                 break;
-            default:break;
         }
+
     }
 
+    sleep(5);
     switch (type) {
         case 1:printf("Wyslano sygnal USR2 do potomka nr: %d\n", ++signals_sent);
             fflush(stdout);
@@ -144,18 +148,14 @@ int main(int argc, char *argv[])
 
             kill(child_pid, SIGRTMAX);
             break;
-        default:break;
     }
-
-    int return_value;
-    waitpid(child_pid, &return_value, 0);
-    printf("%s %d\n%s %d \n", "Signal sended: ", signals_sent, "Signal received: ", signals_received);
-    fflush(stdout);
 
     return 0;
 }
 
 void print_help()
 {
-
+    printf("%s\n", "-l [Liczba] --type [Typ]");
+    printf("%s\n", "-l\tliczba sygnalow do wyslania");
+    printf("%s\n", "--type\t 1 lub 2 lub 3");
 }
