@@ -137,6 +137,7 @@ void calc_service(msgbuf_t buf)
     else {
         println(MSG_MISSING_IPC);
     }
+
 }
 
 int perform(char *operation, int op1, int op2)
