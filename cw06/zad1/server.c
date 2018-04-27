@@ -213,6 +213,8 @@ int main(int argc, char *argv[])
     char *env_home = getenv(HOME);
     key_t key_server = ftok(env_home, SERVER);
 
+    atexit(( void (*)(void) ) remove_queue(key_server));
+
     int server_queue = msgget(key_server, IPC_CREAT | 0666);
 
     if (server_queue < 0) {
@@ -262,7 +264,6 @@ int main(int argc, char *argv[])
                 default:
                     break;
             }
-
         }
     }
 
