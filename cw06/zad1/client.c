@@ -99,7 +99,7 @@ void remove_queue_2(void)
         printf("Usunieto kolejke!\n");
     }
     else {
-        printf("Blad usuwania kolejki!\n");
+//        printf("Blad usuwania kolejki!\n");
     }
 }
 
