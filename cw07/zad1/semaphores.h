@@ -3,8 +3,8 @@
 
 #include "commons.h"
 
-void give_semaphore(int sid, unsigned short sind);
+void give_semaphore(int semid, unsigned short sem_num);
 
-void take_semaphore(int sid, unsigned short sind);
+void take_semaphore(int semid, unsigned short sem_num);
 
 #endif //ZAD1_SEMAPHORES_H

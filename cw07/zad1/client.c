@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
 void sigint_handler(int sig, siginfo_t *siginfo, void *context)
 {
-    printf("Received sigint. Closing client.\n");
+    printf("Otrzymano SIGINT. Zamkniecie klienta.\n");
     clean();
     exit(EXIT_SUCCESS);
 }
@@ -53,7 +53,7 @@ void config()
     act.sa_sigaction = &sigint_handler;
     act.sa_flags = SA_SIGINFO;
     if (sigaction(SIGINT, &act, NULL) == -1) {
-        printf("sigaction error\n");
+        perror("sigaction error\n");
         exit(EXIT_FAILURE);
     }
 
@@ -61,21 +61,21 @@ void config()
 
     semset_ID = semget(key, 0, 0);
     if (semset_ID == -1) {
-        perror("semget error\n");
+        perror("semget error");
         exit(EXIT_FAILURE);
     }
 
     // get id of shared memory
     int smid = shmget(key, 0, 0);
     if (smid == -1) {
-        perror("shmget error\n");
+        perror("shmget error");
         exit(EXIT_FAILURE);
     }
 
     // include memory segment to process address space
     shared_mem_addr = shmat(smid, NULL, 0);
     if (shared_mem_addr == ( void * ) -1) {
-        perror("shmat error\n");
+        perror("shmat error");
         exit(EXIT_FAILURE);
     }
 }
@@ -99,7 +99,7 @@ void make_clients()
             // printf("pid: %d\n", p);
         }
         else {
-            printf("child error\n");
+            printf("child error");
             exit(EXIT_SUCCESS);
         }
     }
@@ -111,12 +111,12 @@ int try_to_get_haircut()
     int status;
     int barberSemVal = semctl(semset_ID, BARBER_SEM_NUM, GETVAL);
     if (barberSemVal == -1) {
-        printf("getting barber semaphore value error\n");
+        perror("semctl error");
         exit(EXIT_FAILURE);
     }
 
     if (barberSemVal == 0) {
-        printf("[%zu] CLIENT (%d): Waking up barber.\n", get_time(), getpid());
+        printf("[%zu] CLIENT (%d): Budzenie fryzjera.", get_time(), getpid());
         give_semaphore(semset_ID, BARBER_SEM_NUM);
         give_semaphore(semset_ID, BARBER_SEM_NUM);
         bqueue_occupy_chair(shared_mem_addr, getpid());
@@ -125,11 +125,11 @@ int try_to_get_haircut()
     else {
 
         if (bqueue_put(shared_mem_addr, getpid()) == -1) {
-            printf("[%zu] CLIENT (%d): Barber institution is full. Going away.\n", get_time(), getpid());
+            printf("[%zu] CLIENT (%d): Kolejka jest pelna.\n", get_time(), getpid());
             status = -1;
         }
         else {
-            printf("[%zu] CLIENT (%d): Barber is working. Taking seat in the waiting room.\n", get_time(), getpid());
+            printf("[%zu] CLIENT (%d): Barber pracuje. Zajmuje miejsce w kolejce.\n", get_time(), getpid());
             status = 0;
         }
     }
@@ -155,7 +155,7 @@ void goto_barber()
             take_semaphore(semset_ID, CUT_SEM_NUM);
 
             ++cuts_counter;
-            printf("[%zu] CLIENT (%d): Having hair cut.\n", get_time(), getpid());
+            printf("[%zu] CLIENT (%d): Obcinanie.\n", get_time(), getpid());
         }
     }
 

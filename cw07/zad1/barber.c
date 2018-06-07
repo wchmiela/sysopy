@@ -35,16 +35,16 @@ int main(int argc, char *argv[])
 
 void make_haircut(int clientPid)
 {
-    printf("[%zu] BARBER: Making haircut for %d.\n", get_time(), clientPid);
+    printf("[%zu] BARBER: Obcinanie %d.\n", get_time(), clientPid);
     give_semaphore(semset_ID, CUT_SEM_NUM);
-    printf("[%zu] BARBER: Finished haircut for %d.\n", get_time(), clientPid);
+    printf("[%zu] BARBER: Skonczono obcinanie %d.\n", get_time(), clientPid);
 }
 
 void work()
 {
     pid_t clientPid;
 
-    printf("[%zu] BARBER: Is sleeping." "\n", get_time());
+    printf("[%zu] BARBER: Spi." "\n", get_time());
     while (!finish) {
         take_semaphore(semset_ID, BARBER_SEM_NUM);
         take_semaphore(semset_ID, FIFO_SEM_NUM);
@@ -55,7 +55,7 @@ void work()
 
         while (1) {
             take_semaphore(semset_ID, FIFO_SEM_NUM);
-            bqueue_show(shared_mem_addr);
+//            bqueue_show(shared_mem_addr);
             clientPid = bqueue_get(shared_mem_addr);
 
             if (clientPid != -1) {
@@ -64,7 +64,7 @@ void work()
                 give_semaphore(semset_ID, FIFO_SEM_NUM);
             }
             else {
-                printf("[%zu] BARBER: Is sleeping.\n", get_time());
+                printf("[%zu] BARBER: Spi.\n", get_time());
                 take_semaphore(semset_ID, BARBER_SEM_NUM);
                 give_semaphore(semset_ID, FIFO_SEM_NUM);
                 break;
@@ -93,7 +93,7 @@ void config()
 
     semset_ID = semget(key, 3, IPC_CREAT | 0600);
     if (semset_ID == -1) {
-        printf("semget error\n");
+        perror("semget error");
         exit(EXIT_FAILURE);
     }
 
@@ -125,7 +125,7 @@ void config()
 
 void sigint_handler(int sig, siginfo_t *siginfo, void *context)
 {
-    printf("%s\n", "Received sigint. Closing barber.");
+    printf("%s\n", "Otrzymano SIGINT. Zamkniecie zakladu fryzjerskiego.");
     finish = 1;
 }
 

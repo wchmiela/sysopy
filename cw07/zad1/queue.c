@@ -8,14 +8,10 @@
 
 void bqueue_init(pid_t *arr, int size)
 {
-    // size of queue
-    arr[0] = size + 4;
-    // queue pointer
-    arr[1] = QUEUE_START_POINTER;
-    // number of clients
-    arr[2] = 0;
-    // pid of customer on chair
-    arr[3] = -1;
+    arr[0] = size + 4;                  // rozmiar kolejki
+    arr[1] = QUEUE_START_POINTER;       // wskaznik na poczatek kolejki
+    arr[2] = 0;                         // liczba klientow
+    arr[3] = -1;                        // aktualny klient na krzesle
 }
 
 int bqueue_empty(pid_t *arr)
@@ -71,17 +67,17 @@ pid_t bqueue_get_customer_from_chair(pid_t *arr)
 void bqueue_show(pid_t *arr)
 {
     if (bqueue_empty(arr) == 1) {
-        printf("%s\n", "Barber queue is empty.");
+        printf("%s\n", "Kolejka u barbera jest pusta.");
         return;
     }
 
     int len = arr[CLI_NUM_IND] + 4;
-    printf("%s\n", "Barber queue:");
+    printf("%s\n", "Kolejka u barbera:");
     for (int i = QUEUE_START_POINTER; i < len; i++) {
         printf("\t(%d) PID: %d"  "\n", i - QUEUE_START_POINTER, arr[i]);
     }
-    printf("\tTotal clients number on waiting room: %d"  "\n", arr[CLI_NUM_IND]);
-    printf("Client PID who is on chair: %d"  "\n", arr[CHAIR_IND]);
-    printf("Current pointer (index): %d"  "\n", arr[POINTER_IND]);
-    printf("Queue size: %d"  "\n\n", arr[SIZE_IND]);
+    printf("\tIlosc klientow w poczekalni: %d"  "\n", arr[CLI_NUM_IND]);
+    printf("PID klienta na krzesle: %d"  "\n", arr[CHAIR_IND]);
+    printf("Aktualny wskaznik: %d"  "\n", arr[POINTER_IND]);
+    printf("Rozmiar kolejki: %d"  "\n\n", arr[SIZE_IND]);
 }
