@@ -1,0 +1,4 @@
+#ifndef ZAD1_PRODUCER_H
+#define ZAD1_PRODUCER_H
+
+#endif //ZAD1_PRODUCER_H
