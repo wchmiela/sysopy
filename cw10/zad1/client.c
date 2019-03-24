@@ -1,5 +1,6 @@
 #include "client.h"
 // add comment
+// another one
 int socket_desc;
 
 char *client_name;
